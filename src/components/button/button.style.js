@@ -1,14 +1,16 @@
+import {COLORS, FONT_SIZE} from "../../constants/theme"
+
 export const styles = {
     btn:{
         width:'100%',
         height: 50,
-        backgroundColor: 'blue'
+        backgroundColor: COLORS.red,
     },
 
     texto:{
-        fontSize: 20,
+        fontSize: FONT_SIZE.md,
         color: 'white',
-        padding: 10,
+        padding: 14,
         textAlign: 'center',
     }
 }

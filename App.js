@@ -7,7 +7,7 @@ export default function App() {
   return (<>
           <Text style={styles.textos}>Hello word!</Text>
           <Image/>
-          <Button />
+          <Button texto="Salvar"/>
      </>      
-     )
+     );
 }
