@@ -1,13 +1,18 @@
-import { Image, Text } from 'react-native';
-import {styles} from './styles.js'
-import icons from './src/constants/icons.js';
-import Button from './src/components/button/button.jsx';
-
+import Login from "./src/screens/login/login.jsx";
+import Registro from "./src/screens/registro/registro.jsx";
 export default function App() {
   return (<>
-          <Text style={styles.textos}>Hello word!</Text>
-          <Image/>
-          <Button texto="Salvar"/>
+  <Registro/>          
      </>      
      );
 }
+
+
+/*
+Comandos para salva no GITHUB
+1. git status
+2. git add .
+3. git commit -m "MENSAGEM"
+4. git status
+5. git push
+*/
