@@ -15,6 +15,21 @@ export const styles = {
         marginBottom: 40,
     },
 
+    formHorizontal:{
+        flexDirection: "row",              
+    },
+
+    form70:{
+        width: "70%",
+        marginBottom: 40,
+        paddingRight: 5,
+    },
+
+    form30:{
+        width: "30%",
+        marginBottom: 40,
+    },
+
     scrollView:{
         width: "100%",
     },
@@ -40,4 +55,6 @@ export const styles = {
         fontSize: FONT_SIZE.md,
         marginTop: 25,
     },
+
+   
 }

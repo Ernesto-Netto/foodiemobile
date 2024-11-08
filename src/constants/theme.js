@@ -2,9 +2,10 @@ const COLORS = {
   red: "#ED5359",
   dark_gray: "#5D6275",
   medium_gray: "#A6ABBC",
-  ligth_gray: "#E5ECFC",
-  white: "#F4F7FE",
+  gray: "#E5ECFC",
+  ligth_gray: "#F4F7FE",
   green: "#38C682",
+  white: "#FFFFFF",
 };
 
 const FONT_SIZE = {
