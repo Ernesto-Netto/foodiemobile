@@ -2,12 +2,12 @@ import {COLORS, FONT_SIZE} from "../../constants/theme"
 
 export const styles = {
     container:{
-        marginTop: 50,
         flex: 1,
-        padding: 40,
+        paddingLeft: 40,
+        paddingRight: 40,
         justifyContent:"center",
         alignItems: "center",
-        
+        backgroundColor: COLORS.white,        
     },
 
     form:{

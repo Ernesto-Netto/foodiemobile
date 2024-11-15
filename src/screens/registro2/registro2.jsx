@@ -4,11 +4,12 @@ import Header from "../../components/header/header.jsx";
 import TextBox from "../../components/textbox/textbox.jsx";
 import Button from "../../components/button/button.jsx";
 
-function Registro2() {
+function Registro2(props) {
   return (
     <>
       <View style={styles.container}>
-        <ScrollView style={styles.scrollView}>
+        <ScrollView style={styles.scrollView} 
+        automaticallyAdjustKeyboardInsets={true}>
           <Header texto="Informe seu endereço!" />
 
           <View style={styles.formGroup}>
@@ -45,11 +46,12 @@ function Registro2() {
         </ScrollView>
       </View>
 
-      <View style={styles.footer}>
+{/*     <View style={styles.footer}>
         <TouchableOpacity>
           <Text style={styles.footerText}>Acessar minha conta</Text>
         </TouchableOpacity>
       </View>
+       */} 
     </>
   );
 }
