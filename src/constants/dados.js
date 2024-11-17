@@ -59,29 +59,29 @@ export const banners = [
 export default restaurantes = [
   {
     id: 1,
-    descricao: "Churrascaria e Pizzaria Boizão",
+    nome: "Churrascaria e Pizzaria Boizão",
     endereco: "Alameda Santos, 95",
     logotipo: require("../assets/restaurante1.png"),
   },
 
   {
     id: 2,
-    descricao: "The Keba's Bar",
+    nome: "The Keba's Bar",
     endereco: "Rua Rui Barbosa, 500",
     logotipo: require("../assets/restaurante2.png"),
   },
 
   {
     id: 3,
-    descricao: "Churrascaria e Pizzaria Boizão",
-    endereco: "Alameda Santos, 95",
-    logotipo: require("../assets/restaurante1.png"),
+    nome: "Churrascaria Sabor na Brasa",
+    endereco: "Folha 20, Quadra 15, Lote 15",
+    logotipo: require("../assets/restaurante3.png"),
   },
 
   {
     id: 4,
-    descricao: "The Keba's Bar",
-    endereco: "Rua Rui Barbosa, 500",
-    logotipo: require("../assets/restaurante2.png"),
+    nome: "Galeria da Pizza",
+    endereco: "Rua Raimundo Barroso, 00",
+    logotipo: require("../assets/restaurante4.png"),
   },
 ];

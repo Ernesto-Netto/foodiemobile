@@ -7,6 +7,11 @@ export const styles = {
     padding: 12,
   },
 
+  destaque:{
+    fontSize: FONT_SIZE.lg,
+    fontWeight: 'bold'
+  },
+
   logo: {
     width: 140,
     height: 24,
@@ -26,5 +31,5 @@ export const styles = {
   busca:{
     marginBottom: 10,
 
-  }
+  },
 };
