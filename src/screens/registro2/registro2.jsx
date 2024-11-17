@@ -3,40 +3,62 @@ import { styles } from "./registro2.style.js";
 import Header from "../../components/header/header.jsx";
 import TextBox from "../../components/textbox/textbox.jsx";
 import Button from "../../components/button/button.jsx";
+import { useState } from "react";
 
 function Registro2(props) {
-  return (
+
+  const [endereco, setEndereco] = useState("");
+  const [complemento, setComplemento] = useState("");
+  const [bairro, setBairro] = useState("");
+  const [cidade, setCidade] = useState("");
+  const [uf, setUf] = useState("");
+  const [cep, setCep] = useState("");
+
+  return (    
     <>
       <View style={styles.container}>
         <ScrollView style={styles.scrollView} 
         automaticallyAdjustKeyboardInsets={true}>
-          <Header texto="Informe seu endereço!" />
+          <Header texto="Informe seu endereço!"
+          />
 
           <View style={styles.formGroup}>
             <View style={styles.formHorizontal}>
               <View style={styles.form70}>
-                <TextBox label="Endereço" placeholder="Informe seu endereço" />
+                <TextBox label="Endereço" placeholder="Informe seu endereço"
+                onChangeText={(texto) => setEndereco(texto)}
+                value={endereco}/>
               </View>
               <View style={styles.form30}>
-                <TextBox label="Compl." />
+                <TextBox label="Compl."
+                onChangeText={(texto) => setComplemento(texto)}
+                value={complemento}/>
               </View>
             </View>
 
             <View style={styles.form}>
-              <TextBox label="Bairro" placeholder="Informe seu Bairro!" />
+              <TextBox label="Bairro" placeholder="Informe seu Bairro!"
+              onChangeText={(texto) => setBairro(texto)}
+              value={bairro}/>
             </View>
 
             <View style={styles.formHorizontal}>
               <View style={styles.form70}>
-                <TextBox label="Cidade" placeholder="Informe sua cidade!" />
+                <TextBox label="Cidade" placeholder="Informe sua cidade!"
+                onChangeText={(texto) => setCidade(texto)}
+                value={cidade}/>
               </View>
               <View style={styles.form30}>
-                <TextBox label="UF" />
+                <TextBox label="UF"
+                onChangeText={(texto) => setUf(texto)}
+                value={uf}/>
               </View>
             </View>
 
             <View style={styles.form}>
-              <TextBox label="CEP" placeholder="Informe seu CEP!" />
+              <TextBox label="CEP" placeholder="Informe seu CEP!"
+              onChangeText={(texto) => setCep(texto)}
+              value={cep}/>
             </View>
 
             <View>
