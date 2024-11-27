@@ -1,12 +1,10 @@
 import { COLORS, FONT_SIZE } from "../../constants/theme"
 
 export const styles = {
-    restaurante:{
+    pedido:{
        flexDirection: "row",
        marginBottom: 10,
-       marginTop: 10,
-
-       
+       marginTop: 10,      
         
     },
 
@@ -19,22 +17,23 @@ export const styles = {
     textos:{
         flex: 1,
         padding: 8,
+
     },
 
-    favorito:{
-        width: 30,
-        height: 30,
+    containerValor:{
+        flexDirection: "row",
+        justifyContent: "space-between",
+        marginTop: 10, 
     },
 
-    nome:{
+    valor:{
         color: COLORS.dark_gray,
-        marginBottom: 3,
         fontSize: FONT_SIZE.sm,
     },
 
-    endereco:{
-        color: COLORS.medium_gray,
-        fontSize: FONT_SIZE.sm,
+    status:{
+        color: COLORS.green,
+        marginTop: 10, 
     }
 
 

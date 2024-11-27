@@ -56,7 +56,7 @@ export const banners = [
   },
 ];
 
-export default restaurantes = [
+/*export default restaurantes = [
   {
     id: 1,
     nome: "Churrascaria e Pizzaria Boizão",
@@ -85,3 +85,188 @@ export default restaurantes = [
     logotipo: require("../assets/restaurante4.png"),
   },
 ];
+*/
+
+export const restaurantes = [
+  {
+    id: 1,
+    nome: "Churrascaria e Pizzaria Boizão",
+    endereco: "Alameda Santos, 95",
+    logotipo: require("../assets/restaurante1.png"),
+  },
+
+  {
+    id: 2,
+    nome: "The Keba's Bar",
+    endereco: "Rua Rui Barbosa, 500",
+    logotipo: require("../assets/restaurante2.png"),
+  },
+
+  {
+    id: 3,
+    nome: "Churrascaria Sabor na Brasa",
+    endereco: "Folha 20, Quadra 15, Lote 15",
+    logotipo: require("../assets/restaurante3.png"),
+  },
+
+  {
+    id: 4,
+    nome: "Galeria da Pizza",
+    endereco: "Rua Raimundo Barroso, 00",
+    logotipo: require("../assets/restaurante4.png"),
+  },
+  {
+    id: 5,
+    nome: "Churrascaria e Pizzaria Boizão",
+    endereco: "Alameda Santos, 95",
+    logotipo: require("../assets/restaurante1.png"),
+  },
+
+  {
+    id: 6,
+    nome: "The Keba's Bar",
+    endereco: "Rua Rui Barbosa, 500",
+    logotipo: require("../assets/restaurante2.png"),
+  },
+
+  {
+    id: 7,
+    nome: "Churrascaria Sabor na Brasa",
+    endereco: "Folha 20, Quadra 15, Lote 15",
+    logotipo: require("../assets/restaurante3.png"),
+  },
+
+  {
+    id: 8,
+    nome: "Galeria da Pizza",
+    endereco: "Rua Raimundo Barroso, 00",
+    logotipo: require("../assets/restaurante4.png"),
+  },
+];
+
+export const pedidos = [
+  {
+      id: 1,
+      nome: "Churrascaria e Pizzaria Boizão",
+      endereco: "Alameda Santos, 954",
+      status: "Entregue",
+      dataPedido: "10/05/2024",
+      vl_total: 149,
+      logotipo: require("../assets/restaurante1.png")
+  },
+  {
+      id: 2,
+      nome: "The Keba’s Bar",
+      endereco: "Rua Rui Barbosa, 512",
+      status: "Entregue",
+      dataPedido: "10/05/2024",
+      vl_total: 52,
+      logotipo: require("../assets/restaurante2.png")
+  },
+  {
+      id: 3,
+      nome: "Churrascaria e Pizzaria Boizão",
+      endereco: "Alameda Santos, 954",
+      status: "Entregue",
+      dataPedido: "10/05/2024",
+      vl_total: 71,
+      logotipo: require("../assets/restaurante3.png")
+  },
+  {
+      id: 4,
+      nome: "The Keba’s Bar",
+      endereco: "Rua Rui Barbosa, 512",
+      status: "Entregue",
+      dataPedido: "10/05/2024",
+      vl_total: 29.90,
+      logotipo: require("../assets/restaurante4.png")
+  },
+  {
+      id: 5,
+      nome: "Churrascaria e Pizzaria Boizão",
+      endereco: "Alameda Santos, 954",
+      status: "Entregue",
+      dataPedido: "10/05/2024",
+      vl_total: 149,
+      logotipo: require("../assets/restaurante1.png")
+  },
+  {
+      id: 6,
+      nome: "The Keba’s Bar",
+      endereco: "Rua Rui Barbosa, 512",
+      status: "Entregue",
+      dataPedido: "10/05/2024",
+      vl_total: 48,
+      logotipo: require("../assets/restaurante2.png")
+  },
+  {
+      id: 7,
+      nome: "Churrascaria e Pizzaria Boizão",
+      endereco: "Alameda Santos, 954",
+      status: "Entregue",
+      dataPedido: "10/05/2024",
+      vl_total: 19.90,
+      logotipo: require("../assets/restaurante3.png")
+  },
+  {
+      id: 8,
+      nome: "The Keba’s Bar",
+      endereco: "Rua Rui Barbosa, 512",
+      status: "Entregue",
+      dataPedido: "10/05/2024",
+      vl_total: 112,
+      logotipo: require("../assets/restaurante4.png")
+  }
+];
+
+export const restaurante = {
+  id: 1,
+  nome: "The Keba’s Bar",
+  endereco: "Rua Rui Barbosa, 512 - Paraiso - São Paulo - SP",
+  logotipo: require("../assets/restaurante2.png"),
+  foto: require("../assets/foto-restaurante.png"),
+  vlEntrega: 5.00,
+  isFavorito: true,
+  cardapio: [
+      {
+          idCategoria: 1,
+          categoria: "Ofertas",
+          itens: [
+              {
+                  idProduto: 1,
+                  nome: "Pizza Calabresa",
+                  descricao: "Massa artesanal, mussarela e calabresa",
+                  valor: 30.00,
+                  foto: require("../assets/produto-pizza.png")
+              },
+              {
+                  idProduto: 2,
+                  nome: "Coca-Cola Lata",
+                  descricao: "Coca-Cola lata de 300ml trincando de gelada",
+                  valor: 5.00,
+                  foto: require("../assets/produto-coca.png")
+              }
+          ]
+      },
+      {
+          idCategoria: 2,
+          categoria: "Mais Pedidos",
+          itens: [
+              {
+                  idProduto: 3,
+                  nome: "Pizza Mussarela",
+                  descricao: "Massa artesanal, mussarela e calabresa",
+                  valor: 30.00,
+                  foto: require("../assets/produto-pizza.png")
+              },
+              {
+                  idProduto: 4,
+                  nome: "Coca-Cola Litro",
+                  descricao: "Coca-Cola lata de 300ml trincando de gelada",
+                  valor: 5.00,
+                  foto: require("../assets/produto-coca.png")
+              }
+          ]
+      }
+  ]
+};

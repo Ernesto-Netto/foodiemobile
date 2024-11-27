@@ -1,5 +1,5 @@
 import { Image, View, Text, ScrollView } from "react-native";
-import { styles } from "./home.styles.js";
+import { styles } from "./aba-home.styles.js";
 import icons from "../../constants/icons.js";
 import { SafeAreaView } from "react-native-safe-area-context";
 import TextBox from "../../components/textbox/textbox.jsx";
@@ -9,7 +9,12 @@ import dados, {banners, categorias, restaurantes} from "../../constants/dados.js
 import Banners from "../../components/banners/banners.jsx";
 import Restaurante from "../../components/restaurante/restaurante.jsx";
 
-function Home() {
+function AbaHome(props) {
+
+  function openCardapio(){
+    props.navigation.navigate("cardapio");
+  }
+
   const [busca, setBusca] = useState("");
 
   return (
@@ -34,12 +39,14 @@ function Home() {
         <Text style={styles.destaque}>Destaques</Text>
 
         {            
-        dados.map((restaurante, index) => {
+        restaurantes.map((restaurante, index) => {
           return<View key={index}>
               <Restaurante
                 logotipo={restaurante.logotipo}
                 nome={restaurante.nome}
                 endereco={restaurante.endereco}
+                icone={icons.favoritoFull}
+                onPress={openCardapio}
               />
             </View>
     
@@ -50,4 +57,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default AbaHome;
