@@ -4,7 +4,11 @@ import icons from "../../constants/icons.js";
 import { styles } from "./aba-pedidos.style.js";
 import Pedido from "../../components/pedido/pedido.jsx";
 
-function AbaPedidos(){
+function AbaPedidos(props){
+
+    function DetalhePedido(){
+        props.navigation.navigate("detalhe-pedido");
+    }
     return <View style={styles.container}>
         <FlatList data={pedidos}
         keyExtractor={(pedido) => pedido.id}
@@ -16,7 +20,7 @@ function AbaPedidos(){
             valor={item.vl_total}
             dataPedido={item.dataPedido}
             status={item.status}
-            />       
+            onClickPedido= {DetalhePedido}/>       
         }}
 
         contentContainerStyle={styles.containerList}
